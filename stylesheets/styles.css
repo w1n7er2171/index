@@ -1,47 +1,50 @@
 /* The side navigation menu */
 html{
     font: 1em Arial;
-    background-color: #04AA6D;
+    color: rgb(202, 238, 197);
+    background-color: rgb(6, 6, 6);
 }
 
-.header {
+header {
+    background-color: rgb(6, 6, 6);
     position: fixed;
-}
-
-.sidebar {
-    margin-top: 60px;
+    width: 100%;
     padding: 0;
-    width: 200px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    
+    top: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
 }
     
-/* Sidebar links */
-.sidebar a {
+/* Navbar links */
+.navbar a {
+    float: left;
     display: block;
-    color: black;
-    padding: 16px;
+    color: rgb(202, 238, 197);
+    padding: 10px;
     text-decoration: none;
 }
 
 /* Active/current link */
-.sidebar a.active {
-    background-color: rgba(0, 255, 64, 0.4);
-    color: black;
+.navbar a.active {
+    background-color: rgba(0, 255, 13, 0.342);
+}
+
+.navbar a.logo:hover {
+    background-color: rgb(6, 6, 6);
 }
 
 /* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+.navbar a.inactive:hover {
+    background-color: rgba(0, 175, 9, 0.342);
 }
     
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
     margin-left: 200px;
-    padding: 1px 16px;
+    padding: 40px;
     height: 1000px;
 }
     
@@ -65,7 +68,7 @@ html{
 }
 
 
-.twitter-timeline {
+/*.twitter-timeline {
     position: relative;
     float: right;
-}
+}*/
