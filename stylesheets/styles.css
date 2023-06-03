@@ -91,15 +91,27 @@ header {
         display: inline-block;
     }
 
+    .navbar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+
     .navbar a {
     text-align: center;
     float: none;
     background-color: rgb(6, 6, 6);
     }
-    .navbar ul {list-style-position: center;}
+    
+    .navbar ul {
+        text-align: center;
+        display: flex;
+    }
 
     .content {
-        margin-top: 60;
+        margin-top: 90;
     }
 }
 
