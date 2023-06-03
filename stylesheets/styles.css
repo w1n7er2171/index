@@ -14,8 +14,17 @@ header {
 }
 
 .navbar {
-    list-style-type: none;
     overflow: hidden;
+}
+
+.navbar li {
+    list-style-type: none;
+    float: left;
+    display: block;
+    color: rgb(202, 238, 197);
+    margin-top: 0%;
+    /*padding: 10px;*/
+    text-decoration: none;
 }
     
 /* Navbar links */
@@ -23,6 +32,7 @@ header {
     float: left;
     display: block;
     color: rgb(202, 238, 197);
+    margin-bottom: 18px;
     padding: 10px;
     text-decoration: none;
 }
@@ -50,20 +60,24 @@ header {
     
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .sidebar {
+    .navbar {
     width: 100%;
-    height: auto;
-    position: relative;
+    position: fixed;
+    
+    background-color: rgb(6, 6, 6);
     }
-    .sidebar a {float: left;}
+    .navbar a {float: left;}
+    .navbar li {margin: center;}
+    .navbar a.logo {padding: center;}
     div.content {margin-left: 0;}
 }
     
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
-    .sidebar a {
+    .navbar a {
     text-align: center;
     float: none;
+    background-color: rgb(6, 6, 6);
     }
 }
 
