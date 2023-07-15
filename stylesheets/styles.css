@@ -2,77 +2,67 @@
 html{
     font-family: 'Inconsolata', monospace;
     color: rgb(202, 238, 197);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: rgb(6, 6, 6);
 }
 
 header {
+    /*left: 0px;*/
+    top: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
     background-color: rgb(6, 6, 6);
     position: fixed;
+    align-content: center;
+    
     width: 100%;
-    padding: 0;
-    top: 0;
 }
 
 .navbar {
     overflow: hidden;
-    display: flex;
-    /*justify-content: space-between;*/
-    align-content: center;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.navbar a {
+    text-decoration: none;
 }
 
 .navbar li {
-    list-style-type: none;
+    display: inline;
+}
+
+.hide { display:none; }
+
+.navbar a:link {
     color: rgb(202, 238, 197);
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    line-height: 48px;
-    font-size: 28px;
-    text-decoration: none;
-}
-
-.navbar ul {
-    text-align: center;
-    height: 96px;
-    padding-left: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-    
-/* Navbar links */
-.navbar a {
-    float: left;
-    display: block;
-    color: rgb(202, 238, 197);
-    /*margin-bottom: 18px;*/
-    padding: 10px;
-    text-decoration: none;
-}
-
-/* Active/current link */
-.navbar a.active {
-    background-color: rgba(0, 255, 13, 0.342);
-}
-
-.navbar a.logo:hover {
-    background-color: rgb(6, 6, 6);
 }
 
 /* Links on mouse-over */
-.navbar a.inactive:hover {
+.navbar a:hover {
+    color: rgb(202, 238, 197);
     background-color: rgba(0, 175, 9, 0.342);
 }
     
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
     margin-left: 200px;
+    margin-top: 100px;
     padding: 90px;
     height: 1000px;
 }
     
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* On screens that are less than 700px wide, make the sidebar into a topbar
 @media screen and (max-width: 700px) {
     .navbar {
     width: 100%;
@@ -83,9 +73,9 @@ header {
     .navbar ul {display: list-item flow;}
     .navbar a.logo {padding: center;}
     .content {margin-left: 0;}
-}
+}*/
     
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally 
 @media screen and (max-width: 500px) {
     .navbar {
         display: inline-block;
@@ -113,10 +103,4 @@ header {
     .content {
         margin-top: 90;
     }
-}
-
-
-/*.twitter-timeline {
-    position: relative;
-    float: right;
 }*/
