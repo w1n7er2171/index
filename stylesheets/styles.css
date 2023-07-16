@@ -62,20 +62,20 @@ header {
     height: 1000px;
 }
     
-/* On screens that are less than 700px wide, make the sidebar into a topbar
+/* On screens that are less than 700px wide, make the sidebar into a topbar*/
 @media screen and (max-width: 700px) {
-    .navbar {
+    /*.navbar {
     width: 100%;
     position: fixed;
     background-color: rgb(6, 6, 6);
     }
     .navbar a {float: left;}
     .navbar ul {display: list-item flow;}
-    .navbar a.logo {padding: center;}
-    .content {margin-left: 0;}
-}*/
+    .navbar a.logo {padding: center;}*/
+    .content {margin-left: 0;  width: 50%;}
+}
     
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally 
+/* On screens that are less than 500px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 500px) {
     .navbar {
         display: inline-block;
@@ -102,5 +102,6 @@ header {
 
     .content {
         margin-top: 90;
+        width: 50%;
     }
-}*/
+}
