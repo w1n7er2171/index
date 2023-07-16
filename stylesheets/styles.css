@@ -2,22 +2,25 @@
 html{
     font-family: 'Inconsolata', monospace;
     color: rgb(202, 238, 197);
+    background-color: rgb(6, 6, 6);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(6, 6, 6);
+    color: rgb(202, 238, 197);
+    background-color: rgb(6, 6, 6) !important;
+}
+
+.active {
+    background-color: rgb(43, 49, 42)
 }
 
 header {
     /*left: 0px;*/
     top: 0px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 10%;
     background-color: rgb(6, 6, 6);
     position: fixed;
@@ -28,10 +31,14 @@ header {
 
 .navbar {
     overflow: hidden;
+}
 
-    flex-grow: 0;
-    flex-shrink: 0;
-
+.navbar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: rgb(6, 6, 6);
 }
 
 .navbar a {
@@ -40,6 +47,7 @@ header {
 
 .navbar li {
     display: inline;
+    padding-right: 50;
 }
 
 .hide { display:none; }
@@ -48,18 +56,43 @@ header {
     color: rgb(202, 238, 197);
 }
 
+.navbar a:visited {
+    color: rgb(202, 238, 197);
+}
+
 /* Links on mouse-over */
 .navbar a:hover {
     color: rgb(202, 238, 197);
     background-color: rgba(0, 175, 9, 0.342);
 }
-    
+
+.navbar a.logo:hover {
+    background-color: rgb(6, 6, 6);
+}
+
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+}
+
+.dropdown:hover {
+    background-color: rgba(0, 175, 9, 0.342);
+    height: 90px;
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
-    margin-left: 200px;
+    /*margin-left: 200px;*/
     margin-top: 100px;
     padding: 90px;
-    height: 1000px;
+    /*height: 1000px;*/
 }
     
 /* On screens that are less than 700px wide, make the sidebar into a topbar*/
