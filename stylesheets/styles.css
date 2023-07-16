@@ -21,12 +21,27 @@ header {
     /*left: 0px;*/
     top: 0px;
 
-    padding: 10px 10%;
     background-color: rgb(6, 6, 6);
     position: fixed;
     align-content: center;
     
     width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body a:link {
+    text-decoration: none;
+    color: rgb(202, 238, 197) !important;
+}
+body a:hover{
+    color: rgb(202, 238, 197);
+}
+
+body li {
+    padding: 10px;
 }
 
 .navbar {
@@ -47,7 +62,6 @@ header {
 
 .navbar li {
     display: inline;
-    padding-right: 50;
 }
 
 .hide { display:none; }
@@ -79,7 +93,7 @@ header {
 
 .dropdown:hover {
     background-color: rgba(0, 175, 9, 0.342);
-    height: 90px;
+    height: 110px;
 }
 
 .dropdown:hover .dropdown-options {
@@ -93,6 +107,10 @@ header {
     margin-top: 100px;
     padding: 90px;
     /*height: 1000px;*/
+}
+
+.content img{
+    max-width:500px;
 }
     
 /* On screens that are less than 700px wide, make the sidebar into a topbar*/
