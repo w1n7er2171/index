@@ -41,7 +41,7 @@ body a:link {
     color: rgb(202, 238, 197) !important;
 }
 body a:hover{
-    color: rgb(202, 238, 197);
+    color: #caeec5;
 }
 
 body li {
