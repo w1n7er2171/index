@@ -29,9 +29,18 @@ header {
     width: 100%;
 }
 
+a:visited {
+    color: rgb(202, 238, 197);
+}
+
 ul {
     list-style: none;
     padding-right: 2rem;
+}
+
+.consecutiveLines {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 li {
@@ -120,6 +129,7 @@ body li {
 }
 
 footer {
+    font-size: 14;
     height: 60;
     border: 1px;
     margin-top: auto;
