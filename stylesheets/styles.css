@@ -1,8 +1,8 @@
 /* The side navigation menu */
 html{
     font-family: 'Inconsolata', monospace !important;
-    color: rgb(202, 238, 197);
-    background-color: rgb(6, 6, 6);
+    color: #caeec5;
+    background-color: #060606;
     height: 100%;
 }
 
